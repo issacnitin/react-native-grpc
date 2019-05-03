@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72903797227C7EAE009470A3 /* gRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72903796227C7EAE009470A3 /* gRPC.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* RNReactNativeGrpc.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeGrpc.m */; };
 		D1D38589514C1511BE375567 /* Pods_RNReactNativeGrpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522C7FD493E51241BAAAD056 /* Pods_RNReactNativeGrpc.framework */; };
 /* End PBXBuildFile section */
@@ -27,8 +26,6 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNReactNativeGrpc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeGrpc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		522C7FD493E51241BAAAD056 /* Pods_RNReactNativeGrpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNReactNativeGrpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72903795227C7EAE009470A3 /* RNReactNativeGrpc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNReactNativeGrpc-Bridging-Header.h"; sourceTree = "<group>"; };
-		72903796227C7EAE009470A3 /* gRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gRPC.swift; sourceTree = "<group>"; };
 		9C360073CA432CB26ADCAB9F /* Pods-RNReactNativeGrpc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNReactNativeGrpc.release.xcconfig"; path = "Target Support Files/Pods-RNReactNativeGrpc/Pods-RNReactNativeGrpc.release.xcconfig"; sourceTree = "<group>"; };
 		ABEADE509D5D368656894BA6 /* Pods-RNReactNativeGrpc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNReactNativeGrpc.debug.xcconfig"; path = "Target Support Files/Pods-RNReactNativeGrpc/Pods-RNReactNativeGrpc.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNReactNativeGrpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeGrpc.h; sourceTree = "<group>"; };
@@ -58,11 +55,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				72903796227C7EAE009470A3 /* gRPC.swift */,
 				B3E7B5881CC2AC0600A0062D /* RNReactNativeGrpc.h */,
 				B3E7B5891CC2AC0600A0062D /* RNReactNativeGrpc.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				72903795227C7EAE009470A3 /* RNReactNativeGrpc-Bridging-Header.h */,
 				DA95ADB1DE6C8D514BF7AA1B /* Pods */,
 				84CBA14E23DE71C38DBDB577 /* Frameworks */,
 			);
@@ -82,7 +77,6 @@
 				ABEADE509D5D368656894BA6 /* Pods-RNReactNativeGrpc.debug.xcconfig */,
 				9C360073CA432CB26ADCAB9F /* Pods-RNReactNativeGrpc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNReactNativeGrpc.m in Sources */,
-				72903797227C7EAE009470A3 /* gRPC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
