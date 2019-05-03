@@ -12,11 +12,13 @@
 #import <react-native-grpc-glife-umbrella.h>
 #import <RxLibrary/GRXWriter+Immediate.h>
 #import <RxLibrary/GRXWriter+Transformations.h>
+#import "RCTEventEmitter.h"
+#import "RCTBridgeModule.h"
 
 static NSString * const kHostAddress = @"localhost:50051";
 
 
-@interface Setup : NSObject
+@interface Setup :  RCTEventEmitter <RCTBridgeModule>
 - (void) connect ;
 
 @end
@@ -28,15 +30,12 @@ static NSString * const kHostAddress = @"localhost:50051";
 - (void) connect {
     [GRPCCall useInsecureConnectionsForHost:kHostAddress];
     _service = [[LocationService alloc] initWithHost:kHostAddress];
-    
-    Location *loc = [Location message];
-    loc.profileId = @"1";
-    loc.longitude = 9.232;
-    loc.latitude = 8.123;
-    [_service RPCToNearMeWithRequest:loc eventHandler:^(BOOL done, Location *response, NSError *error) {
-        
+}
+
+- (void) NearMe: (Location*)loc {
+    [_service RPCToNearMeWithRequest: loc eventHandler:^(BOOL done, Location *response, NSError *error) {
         if(response) {
-            
+            [self sendEventWithName:@"sayHello" body:@"Hello"];
         }
     }];
 }
