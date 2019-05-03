@@ -1,0 +1,4 @@
+target 'RNReactNativeGrpc' do
+    use_frameworks!
+    pod 'SwiftGRPC'
+end
