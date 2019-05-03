@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package profile; 
+
+service ProfileService {
+  rpc GetUser(UserRequest) returns (Response) {
+  }
+
+  rpc RegisterUser(User) returns (Response) {
+  } 
+}
+
+message User {
+  string Id       = 1;
+  string Name     = 2;
+  string Phone    = 3;
+  string Country  = 4;
+}
+
+message UserRequest {
+  string Id = 1;
+}
+
+message Response {
+  bool OperationSuccess = 1;
+  User User = 2;
+}

@@ -1,36 +1,60 @@
 PODS:
+  - "!ProtoCompiler (3.7.0)":
+    - Protobuf (~> 3.0)
+  - "!ProtoCompiler-gRPCPlugin (1.20.0)":
+    - "!ProtoCompiler (= 3.7.0)"
+    - gRPC-ProtoRPC (= 1.20.0)
   - boost-for-react-native (1.63.0)
-  - BoringSSL (10.0.6):
-    - BoringSSL/Implementation (= 10.0.6)
-    - BoringSSL/Interface (= 10.0.6)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
-  - BoringSSL/Implementation (10.0.6):
-    - BoringSSL/Interface (= 10.0.6)
-  - BoringSSL/Interface (10.0.6)
   - DoubleConversion (1.1.6)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - gRPC-Core (1.19.0):
-    - gRPC-Core/Implementation (= 1.19.0)
-    - gRPC-Core/Interface (= 1.19.0)
-  - gRPC-Core/Implementation (1.19.0):
+  - gRPC (1.20.0):
+    - gRPC-RxLibrary (= 1.20.0)
+    - gRPC/Main (= 1.20.0)
+  - gRPC-Core (1.20.0):
+    - gRPC-Core/Implementation (= 1.20.0)
+    - gRPC-Core/Interface (= 1.20.0)
+  - gRPC-Core/Implementation (1.20.0):
     - BoringSSL-GRPC (= 0.0.3)
-    - gRPC-Core/Interface (= 1.19.0)
+    - gRPC-Core/Interface (= 1.20.0)
     - nanopb (~> 0.3)
-  - gRPC-Core/Interface (1.19.0)
+  - gRPC-Core/Interface (1.20.0)
+  - gRPC-ProtoRPC (1.20.0):
+    - gRPC-ProtoRPC/Main (= 1.20.0)
+  - gRPC-ProtoRPC/Main (1.20.0):
+    - gRPC (= 1.20.0)
+    - gRPC-RxLibrary (= 1.20.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.20.0)
+  - gRPC/Main (1.20.0):
+    - gRPC-Core (= 1.20.0)
+    - gRPC-RxLibrary (= 1.20.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Protobuf (3.7.0)
+  - react-native-grpc-glife (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - react-native-grpc-glife/Messages (= 0.0.1)
+    - react-native-grpc-glife/Services (= 0.0.1)
+  - react-native-grpc-glife/Messages (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - Protobuf
+  - react-native-grpc-glife/Services (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
+    - gRPC-ProtoRPC
+    - react-native-grpc-glife/Messages
   - React/Core (0.59.5):
     - yoga (= 0.59.5.React)
   - React/CxxBridge (0.59.5):
@@ -71,17 +95,13 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - SwiftGRPC (0.9.0):
-    - BoringSSL (~> 10.0)
-    - gRPC-Core (~> 1.19.0)
-    - SwiftProtobuf (~> 1.5.0)
-  - SwiftProtobuf (1.5.0)
   - yoga (0.59.5.React)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-grpc-glife (from `.`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -89,18 +109,20 @@ DEPENDENCIES:
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
-  - SwiftGRPC
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - "!ProtoCompiler"
+    - "!ProtoCompiler-gRPCPlugin"
     - boost-for-react-native
-    - BoringSSL
     - BoringSSL-GRPC
+    - gRPC
     - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
     - nanopb
-    - SwiftGRPC
-    - SwiftProtobuf
+    - Protobuf
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -111,23 +133,29 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-grpc-glife:
+    :path: "."
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  "!ProtoCompiler": efc8ba4dceb16b48f6b366a08500871c8d3ff8d2
+  "!ProtoCompiler-gRPCPlugin": 918f34ee4b87b18dca8d1b4ea2f7a178be8596d3
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  gRPC-Core: bd9472c8daa2e414b9f8038ba667bf56ce0e02b8
+  gRPC: d175f32a1f0ff0eafc768e38e8c0b8a9fcbacc65
+  gRPC-Core: b247504496d2bdf47e6a87690c0d48f8424b324a
+  gRPC-ProtoRPC: d49c7074c6a5e5a9f18f9b5a1c6d94787334bcbe
+  gRPC-RxLibrary: 3b5272bfdd136c3bc1383ffdfc210404b5d8400a
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   React: 90adac468c7b72bf1fa6c64bf230650f851a8388
-  SwiftGRPC: 25c008ae77c849ab292c138bfe4dbf57a9ad866e
-  SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
+  react-native-grpc-glife: 8842e8872d68e1ef8363f57bb3ad738e8207f0af
   yoga: 2e571f113e8cbeb0eb752aeebc86c1bfe7a8200c
 
-PODFILE CHECKSUM: b9eadad8e9df680af104e0c6200a02a1dcf9351f
+PODFILE CHECKSUM: c5a9bf95c67754e55cfb212cfecc7300447804bc
 
 COCOAPODS: 1.6.1
