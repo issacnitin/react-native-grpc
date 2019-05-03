@@ -1,5 +1,6 @@
 
 #import "RNReactNativeGrpc.h"
+#import "gRPCMethods.m"
 
 @implementation RNReactNativeGrpc
 
@@ -7,8 +8,9 @@
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(Setup)
 
-RCT_EXPORT_METHOD()
+RCT_EXTERN_METHOD(connect:(Location*)loc)
+
 @end
   
