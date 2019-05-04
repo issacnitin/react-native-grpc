@@ -12,7 +12,7 @@
   "author": "",
   "license": "",
   "peerDependencies": {
-    "react-native": "0.58"
+    "react-native": ">=0.58"
   },
   "dependencies": {
     "react-native": "^0.59.5"

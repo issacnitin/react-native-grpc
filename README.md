@@ -1,4 +1,7 @@
 
+
+Add '/node_modules/' to path of every pod in Podfile
+for Development
 # react-native-react-native-grpc
 
 ## Getting started

@@ -7,11 +7,11 @@ target 'RNReactNativeGrpc' do
 
   # Pods for RNReactNativeGrpc
   pod 'react-native-grpc-glife', :path => '.'
-  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
-  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
-  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  pod 'DoubleConversion', :podspec => '../../react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../../react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../../react-native/third-party-podspecs/Folly.podspec'
+  pod 'yoga', :path => '../../react-native/ReactCommon/yoga'
+  pod 'React', :path => '../../react-native', :subspecs => [
       'Core',
       'CxxBridge', # Include this for RN >= 0.47
       'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43

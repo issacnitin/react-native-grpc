@@ -10,7 +10,7 @@ NSString *kHostAddress = @"127.0.0.1:50051";
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(RNReactNativeGrpc)
 
 RCT_EXTERN_METHOD(connect:(Location*)loc)
 

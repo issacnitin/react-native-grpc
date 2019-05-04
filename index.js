@@ -1,6 +1,7 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules, NativeEventEmitter } from 'react-native';
 
 const { RNReactNativeGrpc } = NativeModules;
+const { RNReactNativeGrpcListener } = new NativeEventEmitter(NativeModules.RNReactNativeGrpc)
 
-export default RNReactNativeGrpc;
+export default { RNReactNativeGrpc, RNReactNativeGrpcListener };

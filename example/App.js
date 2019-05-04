@@ -8,6 +8,10 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import { ReactNativeGrpc, ReactNativeGrpcListener } from 'react-native-grpc-glife';
+
+RNBackgroundService.RNBackgroundServiceLocationListener.addListener('sayHello',
+(res) => { console.log("Hello: " + res) });
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
