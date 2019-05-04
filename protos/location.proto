@@ -7,7 +7,7 @@ service LocationService {
   rpc NearMe(Location) returns (stream Location) {
   }
 
-  rpc UpdateMyLocation(Location) returns (Response) {
+  rpc UpdateMyLocation(Location) returns (LocationResponse) {
   }
   
 }
@@ -22,6 +22,6 @@ message NearMeResponse {
   repeated Location profileArray = 1; 
 }
 
-message Response {
+message LocationResponse {
   bool OperationSuccess = 1;
 }

@@ -3,10 +3,10 @@ syntax = "proto3";
 package profile; 
 
 service ProfileService {
-  rpc GetUser(UserRequest) returns (Response) {
+  rpc GetUser(UserRequest) returns (ProfileResponse) {
   }
 
-  rpc RegisterUser(User) returns (Response) {
+  rpc RegisterUser(User) returns (ProfileResponse) {
   } 
 }
 
@@ -21,7 +21,7 @@ message UserRequest {
   string Id = 1;
 }
 
-message Response {
+message ProfileResponse {
   bool OperationSuccess = 1;
   User User = 2;
 }

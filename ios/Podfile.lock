@@ -153,9 +153,9 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   React: 90adac468c7b72bf1fa6c64bf230650f851a8388
-  react-native-grpc-glife: 8842e8872d68e1ef8363f57bb3ad738e8207f0af
+  react-native-grpc-glife: 341e2a383dd594042733b7bc69a3a01d9f165222
   yoga: 2e571f113e8cbeb0eb752aeebc86c1bfe7a8200c
 
-PODFILE CHECKSUM: c5a9bf95c67754e55cfb212cfecc7300447804bc
+PODFILE CHECKSUM: ef1aca70198520806ab658fe3a64f0f3c643dfd0
 
 COCOAPODS: 1.6.1

@@ -1,11 +1,12 @@
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
-#else
 #import <React/RCTBridgeModule.h>
-#endif
+#import <React/RCTEventEmitter.h>
+#import "react-native-grpc-glife-umbrella.h"
 
-@interface RNReactNativeGrpc : NSObject <RCTBridgeModule>
+
+@interface RNReactNativeGrpc : RCTEventEmitter <RCTBridgeModule> {
+    LocationService *_service;
+}
 
 @end
   
