@@ -1,5 +1,5 @@
 .DS_Store
 .vscode/
-client/ios/Pods
+ios/Pods
 node_modules/
-client/ios/RNReactNativeGrpc.xcworkspace
+ios/RNReactNativeGrpc.xcworkspace

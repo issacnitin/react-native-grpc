@@ -37,7 +37,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeGRPCExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeGRPCExampleTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8AB760A3FC1B4476AB335DED /* libRNReactNativeGrpc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A852FF57AD154C33891A7CCD /* libRNReactNativeGrpc.a */; };
+		842C20A79394435595DE9049 /* libRNReactNativeGrpc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D5D2A798E9420981CF3F04 /* libRNReactNativeGrpc.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -296,9 +296,9 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
-		72B9C064227D9EDF003D16F4 /* PBXContainerItemProxy */ = {
+		72B9C0B4227DA4D3003D16F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 833F87C6CAB94C4CBD8C5343 /* RNReactNativeGrpc.xcodeproj */;
+			containerPortal = C278F88744094E3B963A0CDE /* RNReactNativeGrpc.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNReactNativeGrpc;
@@ -352,9 +352,9 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		833F87C6CAB94C4CBD8C5343 /* RNReactNativeGrpc.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNReactNativeGrpc.xcodeproj; path = "../node_modules/react-native-grpc-glife/ios/RNReactNativeGrpc.xcodeproj"; sourceTree = "<group>"; };
-		A852FF57AD154C33891A7CCD /* libRNReactNativeGrpc.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNReactNativeGrpc.a; sourceTree = "<group>"; };
+		93D5D2A798E9420981CF3F04 /* libRNReactNativeGrpc.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNReactNativeGrpc.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C278F88744094E3B963A0CDE /* RNReactNativeGrpc.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNReactNativeGrpc.xcodeproj; path = "../node_modules/react-native-grpc-glife/client/ios/RNReactNativeGrpc.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -385,7 +385,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				8AB760A3FC1B4476AB335DED /* libRNReactNativeGrpc.a in Frameworks */,
+				842C20A79394435595DE9049 /* libRNReactNativeGrpc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,15 +554,15 @@
 		72B9C033227D9EDD003D16F4 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				A852FF57AD154C33891A7CCD /* libRNReactNativeGrpc.a */,
+				93D5D2A798E9420981CF3F04 /* libRNReactNativeGrpc.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		72B9C061227D9EDF003D16F4 /* Products */ = {
+		72B9C0B1227DA4D3003D16F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72B9C065227D9EDF003D16F4 /* libRNReactNativeGrpc.a */,
+				72B9C0B5227DA4D3003D16F4 /* libRNReactNativeGrpc.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -591,7 +591,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				833F87C6CAB94C4CBD8C5343 /* RNReactNativeGrpc.xcodeproj */,
+				C278F88744094E3B963A0CDE /* RNReactNativeGrpc.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -801,8 +801,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 72B9C061227D9EDF003D16F4 /* Products */;
-					ProjectRef = 833F87C6CAB94C4CBD8C5343 /* RNReactNativeGrpc.xcodeproj */;
+					ProductGroup = 72B9C0B1227DA4D3003D16F4 /* Products */;
+					ProjectRef = C278F88744094E3B963A0CDE /* RNReactNativeGrpc.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1054,11 +1054,11 @@
 			remoteRef = 72B9C05F227D9EDE003D16F4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		72B9C065227D9EDF003D16F4 /* libRNReactNativeGrpc.a */ = {
+		72B9C0B5227DA4D3003D16F4 /* libRNReactNativeGrpc.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNReactNativeGrpc.a;
-			remoteRef = 72B9C064227D9EDF003D16F4 /* PBXContainerItemProxy */;
+			remoteRef = 72B9C0B4227DA4D3003D16F4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -1223,6 +1223,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = ReactNativeGRPCExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1249,6 +1250,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = ReactNativeGRPCExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1276,6 +1278,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = ReactNativeGRPCExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1298,6 +1301,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = ReactNativeGRPCExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1327,6 +1331,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = "ReactNativeGRPCExample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1361,6 +1366,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = "ReactNativeGRPCExample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1394,6 +1400,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = "ReactNativeGRPCExample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1427,6 +1434,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-grpc-glife/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-grpc-glife/client/ios/**",
 				);
 				INFOPLIST_FILE = "ReactNativeGRPCExample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
